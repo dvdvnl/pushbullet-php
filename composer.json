@@ -1,0 +1,20 @@
+{
+	"name": "davole/pushbullet-php",
+	"description": "Pushbullet API client for PHP",
+	"authors": [
+		{
+			"name": "David Von Leon",
+			"email": "david@davole.com",
+			"homepage": "http://davole.com/",
+			"role": "Original Developer"
+		}
+	],
+	"license": "MIT",
+	"require": {
+		"lib-curl": "7.38.0",
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+		"files": [ "pushbullet.php" ]
+	}
+}
