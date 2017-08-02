@@ -14,5 +14,5 @@ Full API documentation available [here](https://docs.pushbullet.com).
 $pb = new Pushbullet($token);
 $pb->pushLink($target, $title, $url, $body);
 $pb->pushNote($target, $title, $body);
-$pb->pushFile($target, $filePath, $fileName, $body);
+$pb->pushFile($target, $filePath, $fileName, $title, $body);
 ```

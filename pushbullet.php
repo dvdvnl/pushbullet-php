@@ -73,6 +73,7 @@ class Pushbullet
                 curl_close($ch);
 
                 // Data for notification
+                $data['title'] = $title;
                 $data['body'] = $body;
                 $data['file_name'] = $fileName;
                 $data['file_type'] = $fileType;
@@ -130,8 +131,8 @@ class Pushbullet
     /**
     * Push a file
     */
-    public function pushFile($target, $filePath, $fileName, $body = null)
+    public function pushFile($target, $filePath, $fileName, $title = null, $body = null)
     {
-        return $this->_push($target, 'file', compact('filePath', 'fileName', 'body'));
+        return $this->_push($target, 'file', compact('filePath', 'fileName', 'title', 'body'));
     }
 }
